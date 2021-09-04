@@ -21,4 +21,16 @@ body {
 .attribution a {
   color: #3e52a3;
 }
+
+@media (max-width: 90rem) {
+  body {
+    background: white;
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  body {
+    background: green;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+@media (max-width: 64rem) {
+    // Contents Here...
+}
+
+
+$breakpoint-desktop: ("desktop": "90rem");
+$breakpoint-mobile: ("mobile": "23.4375rem");
+
+@mixin breakpoint-desktop($screenSize) {
+    @media (max-width: map-get($breakpoint-desktop, $screenSize)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-mobile($screenSize) {
+    @media (max-width: map-get($breakpoint-mobile, $screenSize)) {
+        @content;
+    }
+}
