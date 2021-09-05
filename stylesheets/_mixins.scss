@@ -1,19 +1,22 @@
-@media (max-width: 64rem) {
-    // Contents Here...
+
+// Breakpoints
+@media (min-width: 64em) {
+    // style goes here
 }
 
+$breakpoints-desktop: ("desktop": "75rem");
+$breakpoints-mobile: ("mobile": "64rem");
 
-$breakpoint-desktop: ("desktop": "90rem");
-$breakpoint-mobile: ("mobile": "23.4375rem");
-
-@mixin breakpoint-desktop($screenSize) {
-    @media (max-width: map-get($breakpoint-desktop, $screenSize)) {
+// Mobile Mixin
+@mixin breakpoints-mobile($screen) {
+    @media (max-width: map-get($breakpoints-mobile, $screen)) {
         @content;
     }
-}
+};
 
-@mixin breakpoint-mobile($screenSize) {
-    @media (max-width: map-get($breakpoint-mobile, $screenSize)) {
+// Desktop Mixin
+@mixin breakpoints-desktop($screen) {
+    @media (min-width: map-get($breakpoints-desktop, $screen)) {
         @content;
     }
-}
+};

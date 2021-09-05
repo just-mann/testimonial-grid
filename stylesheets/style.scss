@@ -1,16 +1,14 @@
 @import 'variables';
 @import 'reset';
-@import 'mixins';
+@import 'mobileDesign';
+@import 'desktopDesign';
 
 
-@include breakpoint-desktop(desktop) {
+
     body {
-        background: rgb(255, 255, 255);
-    }
-}
+        background-color: red;
 
-@include breakpoint-mobile(mobile) {
-    body {
-        background: green;
+        @include breakpoints-desktop(desktop) {
+            background-color: lightblue;
+        }
     }
-}

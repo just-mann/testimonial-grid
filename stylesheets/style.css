@@ -22,15 +22,13 @@ body {
   color: #3e52a3;
 }
 
-@media (max-width: 90rem) {
-  body {
-    background: white;
-  }
+body {
+  background-color: red;
 }
 
-@media (max-width: 23.4375rem) {
+@media (min-width: 75rem) {
   body {
-    background: green;
+    background-color: lightblue;
   }
 }
 /*# sourceMappingURL=style.css.map */
