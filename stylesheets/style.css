@@ -37,7 +37,7 @@ body {
 
 @media (min-width: 64rem) {
   .grid {
-    padding: 10.25rem 7.3125rem;
+    padding: 7.25rem 7.3125rem;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: (1fr)[2];
@@ -131,7 +131,7 @@ body {
 
 @media (min-width: 64rem) {
   .grid .grid1 {
-    background-position: 90% 0%;
+    background-position: 80% 0%;
     min-height: 17.625rem;
     margin-top: 0;
     -ms-grid-column: 1;

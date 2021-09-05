@@ -9,7 +9,7 @@
     padding: 4.4375rem 1.4375rem;
 
     @include breakpoints-desktop(large) {
-        padding: 10.25rem 7.3125rem;
+        padding: 7.25rem 7.3125rem;
         // gap: 3rem;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -86,7 +86,7 @@
         background-image: url('/images/bg-pattern-quotation.svg');
 
         @include breakpoints-desktop(large) {
-            background-position: 90% 0%;
+            background-position: 80% 0%;
             min-height: 17.625rem;
             margin-top: 0;
             grid-column: 1/3;
