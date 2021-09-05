@@ -8,9 +8,16 @@
     background-color: $lightGray;
     padding: 4.4375rem 1.4375rem;
 
+    @include breakpoints-desktop(large) {
+        padding: 10.25rem 10.3125rem;
+        // gap: 3rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
     &-item {
         width: 100%;
-        margin: auto;
+        margin: 0 auto;
         text-align: left;
         padding: 0 1.9375rem 1.9375rem 1.9375rem;
         border-radius: 0.7rem;
@@ -56,12 +63,18 @@
             font-weight: $lightWeight;
             color: $white;
             margin: 1.3125rem 0;
+
+            @include breakpoints-desktop(large) {
+                font-size: 1.375rem;
+            }
         }
 
         .quotes {
             font-family: $fontFamily;
             font-size: 1.25rem;
             color: $lightGray;
+
+            
         }
     }
 
@@ -73,8 +86,18 @@
         background-position: 95% 0%;
         background-image: url('/images/bg-pattern-quotation.svg');
 
+        @include breakpoints-desktop(large) {
+            background-position: 90% 0%;
+            min-height: 17.625rem;
+            margin-top: 0;
+            grid-column: 1/3;
+        }
+
 
         .grid-item-div {
+            @include breakpoints-desktop(large) {
+                grid-column: 3/4;
+            }
 
             img {
                 border: 3px solid $lightGrayishBlue; 
@@ -91,17 +114,38 @@
         
 
         @include breakpoints-desktop(large) {
+            margin-top: 0;
             background-position: 98% 0%;
+
+            .heading {
+                // background: yellow;
+                max-width: 32.875rem;
+            }
         }
     }
 
     .grid2 {
         background-color: $varyDarkBlackishBlue;
+
+        @include breakpoints-desktop(large) {
+            margin-top: 0;
+
+            .heading {
+                max-width: 12.975rem;
+                margin-bottom: 2.875rem;
+            }
+        }
     }
 
     .grid3 {
         background-color: $white;
         color: $veryDarkGrayishBlue;
+
+        @include breakpoints-desktop(large) {
+            margin-top: 0;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
 
         .grid-item-div {
 
@@ -118,16 +162,36 @@
 
         .heading {
             color: $veryDarkGrayishBlue;
+
+            @include breakpoints-desktop(large) {
+                max-width: 12.5rem;
+            }
         }
     }
 
     .grid4 {
         background-color: $varyDarkBlackishBlue;
+
+        @include breakpoints-desktop(large) {
+            min-height: 17.1875rem;
+            grid-column: 2/4;
+
+            .heading {
+                max-width: 32.1875rem;
+            }
+        }
     }
     
     .grid5 {
         background-color: $white;
         color: $veryDarkGrayishBlue;
+
+        @include breakpoints-desktop(large) {
+            min-height: 35.6875rem;
+            margin-top: 0;
+            grid-column: 4/5;
+            grid-row: 1/4;
+        }
 
         .grid-item-div {
 
