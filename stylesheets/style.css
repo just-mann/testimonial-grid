@@ -14,7 +14,10 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  background-color: #cfcfcf;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 15px;
   text-align: center;
 }
 
