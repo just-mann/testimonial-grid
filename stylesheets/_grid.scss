@@ -9,8 +9,12 @@
     padding: 4.4375rem 1.4375rem;
 
     @include breakpoints-desktop(large) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include breakpoints-desktop(xlarge) {
         padding: 7.25rem 7.3125rem;
-        // gap: 3rem;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
@@ -29,7 +33,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            // background-color: yellow;
 
             &-image {
                 height: 2.5rem;
@@ -64,7 +67,7 @@
             color: $white;
             margin: 1.3125rem 0;
 
-            @include breakpoints-desktop(large) {
+            @include breakpoints-desktop(xlarge) {
                 font-size: 1.375rem;
             }
         }
@@ -78,32 +81,32 @@
     }
 
     .grid1 {
-        // min-height: 27.75rem;
         min-height: auto;
         background-color: $moderateVoilet;
         background-repeat: no-repeat;
         background-position: 95% 0%;
         background-image: url('/images/bg-pattern-quotation.svg');
 
+        
         @include breakpoints-desktop(large) {
+            min-height: auto;
+            grid-column: 1/3;
+        }
+
+        @include breakpoints-desktop(xlarge) {
             background-position: 80% 0%;
-            min-height: 17.625rem;
+            min-height: auto;
             margin-top: 0;
             grid-column: 1/3;
         }
 
 
         .grid-item-div {
-            @include breakpoints-desktop(large) {
-                grid-column: 3/4;
-            }
-
             img {
                 border: 3px solid $lightGrayishBlue; 
             }
 
             > div {
-                
                 
                 > h3 {
                     color: $white;
@@ -112,12 +115,11 @@
         }
         
 
-        @include breakpoints-desktop(large) {
+        @include breakpoints-desktop(xlarge) {
             margin-top: 0;
             background-position: 98% 0%;
 
             .heading {
-                // background: yellow;
                 max-width: 32.875rem;
             }
         }
@@ -126,7 +128,12 @@
     .grid2 {
         background-color: $varyDarkBlackishBlue;
 
+        
         @include breakpoints-desktop(large) {
+            grid-column: 3/4;
+        }
+
+        @include breakpoints-desktop(xlarge) {
             margin-top: 0;
 
             .heading {
@@ -140,7 +147,7 @@
         background-color: $white;
         color: $veryDarkGrayishBlue;
 
-        @include breakpoints-desktop(large) {
+        @include breakpoints-desktop(xlarge) {
             margin-top: 0;
             grid-column: 1/2;
             grid-row: 2/3;
@@ -150,7 +157,7 @@
 
             > div {
                 img {
-
+                    border: 3px solid $white;
                 }
                 
                 > h3 {
@@ -162,7 +169,7 @@
         .heading {
             color: $veryDarkGrayishBlue;
 
-            @include breakpoints-desktop(large) {
+            @include breakpoints-desktop(xlarge) {
                 max-width: 12.5rem;
             }
         }
@@ -170,9 +177,13 @@
 
     .grid4 {
         background-color: $varyDarkBlackishBlue;
-
+        
         @include breakpoints-desktop(large) {
-            min-height: 17.1875rem;
+            grid-column: 2/4;
+        }
+
+        @include breakpoints-desktop(xlarge) {
+            min-height: auto;
             grid-column: 2/4;
 
             .heading {
@@ -185,8 +196,15 @@
         background-color: $white;
         color: $veryDarkGrayishBlue;
 
+        
         @include breakpoints-desktop(large) {
-            min-height: 35.6875rem;
+            min-height: auto;
+            grid-column: 1/4;
+            grid-row: 2/3;
+        }
+
+        @include breakpoints-desktop(xlarge) {
+            min-height: auto;
             margin-top: 0;
             grid-column: 4/5;
             grid-row: 1/3;
@@ -196,7 +214,7 @@
 
             > div {
                 img {
-
+                    border: 3px solid $white;
                 }
                 
                 > h3 {
