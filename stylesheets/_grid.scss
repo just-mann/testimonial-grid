@@ -9,7 +9,7 @@
     padding: 4.4375rem 1.4375rem;
 
     @include breakpoints-desktop(large) {
-        padding: 10.25rem 10.3125rem;
+        padding: 10.25rem 7.3125rem;
         // gap: 3rem;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -73,8 +73,7 @@
             font-family: $fontFamily;
             font-size: 1.25rem;
             color: $lightGray;
-
-            
+            opacity: $reviewParaOpacity;
         }
     }
 

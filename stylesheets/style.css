@@ -37,7 +37,7 @@ body {
 
 @media (min-width: 64rem) {
   .grid {
-    padding: 10.25rem 10.3125rem;
+    padding: 10.25rem 7.3125rem;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: (1fr)[2];
@@ -118,6 +118,7 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 1.25rem;
   color: #cfcfcf;
+  opacity: 70%;
 }
 
 .grid .grid1 {
