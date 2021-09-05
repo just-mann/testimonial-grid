@@ -6,7 +6,7 @@
     grid-template-columns: 1fr;
     gap: 2rem;
     background-color: $lightGray;
-    padding: 4.4375rem 1.4375rem;
+    padding: 2.4375rem 1.4375rem;
 
     @include breakpoints-desktop(large) {
         grid-template-columns: repeat(3, 1fr);
@@ -14,7 +14,7 @@
     }
 
     @include breakpoints-desktop(xlarge) {
-        padding: 7.25rem 7.3125rem;
+        padding: 3.25rem 7.3125rem;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
@@ -36,6 +36,7 @@
 
             &-image {
                 height: 2.5rem;
+                border: 3px solid $white;
                 border-radius: 50%;
             }
 
@@ -103,7 +104,7 @@
 
         .grid-item-div {
             img {
-                border: 3px solid $lightGrayishBlue; 
+                border: 3px solid $veryDarkGrayishBlue; 
             }
 
             > div {
@@ -177,6 +178,10 @@
 
     .grid4 {
         background-color: $varyDarkBlackishBlue;
+
+        img {
+            border: 3px solid $moderateVoilet;
+        }
         
         @include breakpoints-desktop(large) {
             grid-column: 2/4;

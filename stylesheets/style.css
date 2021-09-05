@@ -32,7 +32,7 @@ body {
       grid-template-columns: 1fr;
   gap: 2rem;
   background-color: #cfcfcf;
-  padding: 4.4375rem 1.4375rem;
+  padding: 2.4375rem 1.4375rem;
 }
 
 @media (min-width: 64rem) {
@@ -46,7 +46,7 @@ body {
 
 @media (min-width: 87.5rem) {
   .grid {
-    padding: 7.25rem 7.3125rem;
+    padding: 3.25rem 7.3125rem;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: (1fr)[2];
@@ -79,6 +79,7 @@ body {
 
 .grid-item-div-image {
   height: 2.5rem;
+  border: 3px solid white;
   border-radius: 50%;
 }
 
@@ -159,7 +160,7 @@ body {
 }
 
 .grid .grid1 .grid-item-div img {
-  border: 3px solid #ecf2f8;
+  border: 3px solid #48556a;
 }
 
 .grid .grid1 .grid-item-div > div > h3 {
@@ -235,6 +236,10 @@ body {
 
 .grid .grid4 {
   background-color: #19212e;
+}
+
+.grid .grid4 img {
+  border: 3px solid #7541c8;
 }
 
 @media (min-width: 64rem) {
