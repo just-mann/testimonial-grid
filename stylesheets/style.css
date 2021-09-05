@@ -22,13 +22,138 @@ body {
   color: #3e52a3;
 }
 
-body {
-  background-color: red;
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+  background-color: #cfcfcf;
+  padding: 4.4375rem 1.4375rem;
 }
 
-@media (min-width: 75rem) {
-  body {
-    background-color: lightblue;
+.grid-item {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  padding: 0 1.9375rem 1.9375rem 1.9375rem;
+  border-radius: 0.7rem;
+}
+
+.grid-item-div {
+  width: 12.1875rem;
+  min-height: 2.3rem;
+  margin-top: 1.4375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-item-div-image {
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.grid-item-div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  min-height: 100%;
+  padding: 0;
+}
+
+.grid-item-div > div > h3 {
+  color: white;
+  font-size: 1.0625rem;
+  margin-top: 0;
+}
+
+.grid-item-div > div > h4 {
+  color: #cfcfcf;
+  margin-bottom: 0;
+}
+
+.grid-item .heading {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.4375rem;
+  font-weight: 500;
+  color: white;
+  margin: 1.3125rem 0;
+}
+
+.grid-item .quotes {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.375rem;
+  color: #cfcfcf;
+}
+
+.grid .grid1 {
+  min-height: auto;
+  background-color: #7541c8;
+  background-repeat: no-repeat;
+  background-position: 95% 0%;
+  background-image: url("/images/bg-pattern-quotation.svg");
+}
+
+.grid .grid1 .grid-item-div img {
+  border: 3px solid #ecf2f8;
+}
+
+.grid .grid1 .grid-item-div > div > h3 {
+  color: white;
+}
+
+@media (min-width: 64rem) {
+  .grid .grid1 {
+    background-position: 98% 0%;
   }
+}
+
+.grid .grid2 {
+  background-color: #19212e;
+}
+
+.grid .grid3 {
+  background-color: white;
+  color: #48556a;
+}
+
+.grid .grid3 .grid-item-div > div > h3 {
+  color: #19212e;
+}
+
+.grid .grid3 .heading {
+  color: #48556a;
+}
+
+.grid .grid4 {
+  background-color: #19212e;
+}
+
+.grid .grid5 {
+  background-color: white;
+  color: #48556a;
+}
+
+.grid .grid5 .grid-item-div > div > h3 {
+  color: #19212e;
+}
+
+.grid .grid5 .heading {
+  color: #48556a;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,14 +1,3 @@
 @import 'variables';
 @import 'reset';
-@import 'mobileDesign';
-@import 'desktopDesign';
-
-
-
-    body {
-        background-color: red;
-
-        @include breakpoints-desktop(desktop) {
-            background-color: lightblue;
-        }
-    }
+@import 'grid';
